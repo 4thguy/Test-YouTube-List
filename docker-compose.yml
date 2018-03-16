@@ -1,0 +1,24 @@
+version: '2'
+
+services:
+  php:
+    image: php:7.0-apache
+    working_dir: "/var/www/html"
+    volumes:
+      - ".:/var/www/html"
+    ports:
+      - 2:80
+  composer:
+    image: composer
+    working_dir: "/var/www/html"
+    volumes:
+      - ".:/var/www/html"
+    ports:
+      - 1:1
+    command: composer update
+  node:
+    image: node
+    working_dir: "/var/www/html"
+    volumes:
+      - ".:/var/www/html"
+    command: npm install normalize-css --save

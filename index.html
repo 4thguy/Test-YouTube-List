@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Test YouTube list</title>
+        <meta name="description" content="Test YouTube List">
+        <meta name="author" content="Test YouTube List">
+        <link rel="stylesheet" href="node_modules/normalize-css/normalize.css">
+        <link rel="stylesheet" href="node_modules/roboto-fontface/css/roboto/roboto-fontface.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="box template" target="_blank" href="{{ videoId }}">
+            <a class="url" target="_blank" href="{{ videoId }}">
+                <img class="thumbnail high" src="{{ high }}">
+                <img class="thumbnail medium" src="{{ medium }}">
+                <img class="thumbnail default" src="{{ default }}">
+                <h1 class="title">{{ title }}</h1>
+                <h2 class="channel">{{ channelTitle }}</h2>
+                <h3 class="date">{{ publishedAt }}</h3>
+            </a>
+        </div>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
