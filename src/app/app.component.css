@@ -1,0 +1,55 @@
+body {
+    font-size: 14px;
+}
+
+.box .high,
+.box .default {
+    display: none;
+}
+
+.channels {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    list-style: none;
+    margin: 0 0 1em;
+}
+.channels .channel {
+    padding: 0 1em;
+    text-align: center;
+}
+
+.boxes {
+    display: flex;
+
+    flex-flow: row wrap;
+
+    max-width: 80em;
+
+    margin: 0 auto;
+}
+
+.box {
+    padding: 1em;
+
+    flex: none;
+
+    width: calc(25% - 2em);
+}
+.box .url {
+  color: grey;
+  text-decoration: none;
+}
+.box .title {
+  font-size: 1em;
+  font-weight: bold;
+}
+.box .channel,
+.box .date {
+  font-size: 0.9em;
+  font-weight: normal;
+}
+.box .thumbnail {
+  width: 100%;
+  height: auto;
+}
