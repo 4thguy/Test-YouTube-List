@@ -23,6 +23,6 @@ export class AppComponent {
 
   getVideos(): void {
     this.videoService.getHeroes()
-    .subscribe(videos => this.videos = videos);
+      .subscribe(videos => this.videos = videos);
   }
 }

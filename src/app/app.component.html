@@ -1,11 +1,4 @@
-<div
-  class="box"
-  *ngFor="let video of videos"
->
-    <a class="url" target="_blank">
-        <img [src]="video.snippet.thumbnails.default.url"/>
-        <h1 class="title">{{ video.snippet.title }}</h1>
-        <h2 class="channel">{{ video.channelTitle }}</h2>
-        <h3 class="date">{{ video.snippet.publishedAt }}</h3>
-    </a>
+<div class="boxes">
+  <app-video-box *ngFor="let video of videos" [video]="video">
+  </app-video-box>
 </div>
