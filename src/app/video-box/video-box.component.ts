@@ -19,6 +19,10 @@ export class VideoBoxComponent implements OnInit {
     return 'https://www.youtube.com/watch?v=' + videoId;
   }
 
+  generateVidDate(videoDate: number) {
+    return new Date(videoDate * 1000).toDateString();
+  }
+
   generateImgUrl(videoId: string) {
     return 'https://i.ytimg.com/vi/' + videoId +'/default.jpg';
   }

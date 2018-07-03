@@ -1,4 +1,5 @@
 <div class="boxes">
-  <app-video-box *ngFor="let video of videos" [video]="video">
+  <app-video-box *ngFor="let video of videos | slice:0:limit" [video]="video">
   </app-video-box>
 </div>
+<button class="btn" (click)="clickMore()" [ngClass]="{'disabled': !moreAvailable()}">More</button>
